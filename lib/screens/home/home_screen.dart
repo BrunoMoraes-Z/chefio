@@ -1,4 +1,5 @@
 import 'package:chefio/constants.dart';
+import 'package:chefio/screens/home/widgets/home_body.dart';
 import 'package:chefio/screens/home/widgets/home_head.dart';
 import 'package:chefio/screens/home/widgets/home_bottom.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,7 @@ class HomeScreen extends StatelessWidget {
         child: Stack(
           children: const [
             HomeHead(),
+            HomeBody(),
             HomeBottom(),
           ],
         ),
