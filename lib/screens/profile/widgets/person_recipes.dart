@@ -1,16 +1,17 @@
-import 'package:chefio/screens/home/widgets/food_card.dart';
+import 'package:chefio/screens/profile/widgets/recipe_card.dart';
 import 'package:flutter/material.dart';
 
-class HomeBody extends StatelessWidget {
-  const HomeBody({Key? key}) : super(key: key);
+class PersonRecipes extends StatelessWidget {
+  const PersonRecipes({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
       color: Colors.white,
-      margin: const EdgeInsets.only(top: 262),
-      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 24),
+      // margin: const EdgeInsets.only(top: 360),
+      margin: const EdgeInsets.only(top: 420),
+      padding: const EdgeInsets.only(right: 24, left: 24, bottom: 24, top: 10),
       child: Align(
         alignment: Alignment.topLeft,
         child: SingleChildScrollView(
@@ -18,33 +19,25 @@ class HomeBody extends StatelessWidget {
             direction: Axis.horizontal,
             spacing: 24,
             children: [
-              FoodCard(
-                personImage: 'assets/images/person_1.png',
-                personName: 'Calum Lewis',
+              RecipeCard(
                 foodImage: 'assets/images/pancake.png',
                 foodName: 'Pancake',
                 minutes: 60,
                 onTap: () {},
               ),
-              FoodCard(
-                personImage: 'assets/images/person_2.png',
-                personName: 'Ellif Sonas',
+              RecipeCard(
                 foodImage: 'assets/images/salad.png',
                 foodName: 'Salad',
                 minutes: 60,
                 onTap: () {},
               ),
-              FoodCard(
-                personImage: 'assets/images/person_3.png',
-                personName: 'Elena Shelby',
+              RecipeCard(
                 foodImage: 'assets/images/pancake_2.png',
                 foodName: 'Pancake',
                 minutes: 60,
                 onTap: () {},
               ),
-              FoodCard(
-                personImage: 'assets/images/person_4.png',
-                personName: 'John Priyadi',
+              RecipeCard(
                 foodImage: 'assets/images/salad_2.png',
                 foodName: 'Salad',
                 minutes: 60,
